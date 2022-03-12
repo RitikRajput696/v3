@@ -1,0 +1,28 @@
+@use "../utils/mixin" as mix;
+@use "../utils/color" as clr;
+.sidebar {
+  @include mix.d-flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  width: 6rem;
+}
+.sidebar img {
+  width: 30px;
+}
+.social__icons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+// .social__icons::after {
+//   position: absolute;
+//   content: "";
+//   width: 150px;
+//   height: 2px;
+//   bottom: -90px;
+//   left: -20px;
+//   background-color: clr.$lightest-slate;
+//   transform: rotate(-90deg);
+// }

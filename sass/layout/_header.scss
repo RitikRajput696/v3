@@ -1,0 +1,5 @@
+@use "../utils/mixin" as mix;
+
+header {
+  @include mix.d-flex;
+}

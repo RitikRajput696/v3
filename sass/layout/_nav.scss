@@ -1,0 +1,22 @@
+@use "../utils/mixin" as mix;
+@use "../utils/color" as clr;
+
+nav {
+  @include mix.d-flex;
+  width: 90vw;
+  height: 100%;
+  justify-content: space-between;
+  .logo {
+    font-size: 2rem;
+    color: clr.$light-green;
+    // border-left: 1px solid clr.$light-green;
+    // box-shadow: 0 0 10px clr.$light-green;
+  }
+}
+.nav__links {
+  padding: 1rem 2rem;
+  a {
+    margin-right: 1rem;
+    font-size: 1.1rem;
+  }
+}
