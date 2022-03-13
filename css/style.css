@@ -70,6 +70,10 @@ nav button {
     grid-template-areas: "header header header" "main main main" "sidebar sidebar sidebar" "aside aside aside" "footer footer footer" !important;
   }
 
+  main {
+    width: 100vw;
+  }
+
   .sidebar {
     display: none !important;
   }
@@ -80,6 +84,10 @@ nav button {
 
   nav .nav__links {
     width: 70%;
+  }
+
+  .hero {
+    padding: 3rem 1rem 0 1rem !important;
   }
 }
 a {

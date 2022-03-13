@@ -61,6 +61,7 @@
   }
 }
 
+//mobile view
 @media (max-width: 768px) {
   .grid__container {
     grid-template-areas:
@@ -69,6 +70,9 @@
       "sidebar sidebar sidebar"
       "aside aside aside"
       "footer footer footer" !important;
+  }
+  main {
+    width: 100vw;
   }
   .sidebar {
     display: none !important;
@@ -80,5 +84,8 @@
     .nav__links {
       width: 70%;
     }
+  }
+  .hero {
+    padding: 3rem 1rem 0 1rem !important;
   }
 }
