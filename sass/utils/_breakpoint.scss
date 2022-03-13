@@ -1,5 +1,17 @@
 @media (max-width: 1000px) {
-  .nav__links {
-    display: none;
+  nav {
+    .nav__links {
+      position: absolute;
+      right: 0;
+      top: 80px;
+      height: 100%;
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .hamburger {
+      display: block;
+    }
   }
 }

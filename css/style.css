@@ -12,8 +12,18 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .nav__links {
-    display: none;
+  nav .nav__links {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  nav .hamburger {
+    display: block;
   }
 }
 a {
@@ -66,6 +76,21 @@ nav .logo {
 .nav__links a {
   margin-right: 1rem;
   font-size: 1.1rem;
+}
+
+.hamburger {
+  display: none;
+  width: 35px;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.ham-item {
+  width: 30px;
+  height: 4px;
+  margin-top: 4px;
+  background-color: #64ffda;
 }
 
 .grid__container {
@@ -125,6 +150,7 @@ aside {
   justify-content: center;
   flex-direction: column;
   position: fixed;
+  z-index: -1;
   height: 100%;
   width: 6rem;
   right: 0;

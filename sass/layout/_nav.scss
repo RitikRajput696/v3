@@ -20,3 +20,16 @@ nav {
     font-size: 1.1rem;
   }
 }
+.hamburger {
+  display: none;
+  width: 35px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.ham-item {
+  width: 30px;
+  height: 4px;
+  margin-top: 4px;
+  background-color: clr.$light-green;
+}
