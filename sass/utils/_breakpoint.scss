@@ -1,17 +1,41 @@
+@use "../utils/color" as clr;
+
 @media (max-width: 1000px) {
   nav {
     .nav__links {
       position: absolute;
+      // background: transparent;
+      // z-index: 5;
       right: 0;
       top: 80px;
       height: 100%;
-      border: 2px solid black;
+      width: 70%;
+
+      // border: 2px solid black;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      align-items: center;
+      transform: translateX(100%);
+    }
+    a {
+      position: relative;
+      z-index: 99;
+    }
+    .nav__links::before {
+      position: absolute;
+      // z-index: 3;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: clr.$navy;
+      filter: blur(30px);
     }
     .hamburger {
       display: block;
+    }
+    .nav-active {
+      transform: translateX(0%);
     }
   }
 }
