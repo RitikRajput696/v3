@@ -1,0 +1,25 @@
+//
+@use "../utils/color" as clr;
+.hero {
+  padding: 3rem 5rem 0 5rem;
+  .greeting {
+    color: clr.$light-green;
+    margin-bottom: 1rem;
+  }
+  .name,
+  .job {
+    font-size: 5vw;
+    margin-bottom: 1rem;
+  }
+  .name {
+    color: clr.$lightest-slate;
+  }
+  .job {
+    color: clr.$light-slate;
+  }
+  .about-me {
+    margin-bottom: 3rem;
+    max-width: 30rem;
+    line-height: 1.3;
+  }
+}

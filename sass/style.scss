@@ -12,6 +12,7 @@
 //components
 @forward "./components/anchor";
 @forward "./components/button";
+@forward "./components/para";
 
 //layout
 @forward "./layout/header";
@@ -21,6 +22,7 @@
 @forward "./layout/sidebar";
 @forward "./layout/aside";
 @forward "./layout/footer";
+@forward "./layout/section-hero";
 
 //page
 @forward "./pages/index";

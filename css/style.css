@@ -10,6 +10,7 @@ body {
   background-color: #0a192f;
   color: #e6f1ff;
   overflow-x: hidden;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 1000px) {
@@ -18,7 +19,7 @@ body {
     right: 0;
     top: 80px;
     height: 100%;
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -59,6 +60,27 @@ nav button {
   nav .nav-active {
     transform: translateX(0%);
   }
+
+  main .hero {
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .grid__container {
+    grid-template-areas: "header header header" "main main main" "sidebar sidebar sidebar" "aside aside aside" "footer footer footer" !important;
+  }
+
+  .sidebar {
+    display: none !important;
+  }
+
+  aside {
+    display: none !important;
+  }
+
+  nav .nav__links {
+    width: 70%;
+  }
 }
 a {
   text-decoration: none;
@@ -73,7 +95,8 @@ button {
   color: #e6f1ff;
   background: transparent;
   border: 1px solid #64ffda;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  color: #64ffda;
   padding: 0.5em 1em;
   border-radius: 4px;
   transition: ease 200ms;
@@ -83,6 +106,10 @@ button:hover {
   background-color: #64ffda;
   color: #0a192f;
   box-shadow: 0 0 10px #64ffda;
+}
+
+p {
+  color: #a8b2d1;
 }
 
 header {
@@ -164,7 +191,7 @@ footer {
   align-items: center;
   flex-direction: column;
   position: fixed;
-  height: 100%;
+  height: calc(100vh - 5rem);
   width: 6rem;
 }
 
@@ -186,7 +213,7 @@ aside {
   flex-direction: column;
   position: fixed;
   z-index: -1;
-  height: 100%;
+  height: calc(100vh - 5rem);
   width: 6rem;
   right: 0;
 }
@@ -215,4 +242,28 @@ footer {
 }
 footer a {
   color: #8892b0;
+}
+
+.hero {
+  padding: 3rem 5rem 0 5rem;
+}
+.hero .greeting {
+  color: #64ffda;
+  margin-bottom: 1rem;
+}
+.hero .name,
+.hero .job {
+  font-size: 5vw;
+  margin-bottom: 1rem;
+}
+.hero .name {
+  color: #ccd6f6;
+}
+.hero .job {
+  color: #a8b2d1;
+}
+.hero .about-me {
+  margin-bottom: 3rem;
+  max-width: 30rem;
+  line-height: 1.3;
 }

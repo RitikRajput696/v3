@@ -4,7 +4,7 @@
   @include mix.d-flex;
   flex-direction: column;
   position: fixed;
-  height: 100%;
+  height: calc(100vh - 5rem);
   width: 6rem;
 }
 .sidebar img {
