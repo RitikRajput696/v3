@@ -9,12 +9,11 @@ nav {
   .logo {
     font-size: 2rem;
     color: clr.$light-green;
-    // border-left: 1px solid clr.$light-green;
-    // box-shadow: 0 0 10px clr.$light-green;
   }
 }
 .nav__links {
   padding: 1rem 2rem;
+  transition: transform 0.5s ease-in;
   a {
     margin-right: 1rem;
     font-size: 1.1rem;

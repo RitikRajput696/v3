@@ -4,27 +4,41 @@
   nav {
     .nav__links {
       position: absolute;
-      // background: transparent;
-      // z-index: 5;
       right: 0;
       top: 80px;
       height: 100%;
       width: 70%;
 
-      // border: 2px solid black;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
       transform: translateX(100%);
+
+      box-shadow: 0 0 5px clr.$off-white;
+      border-left: 1px solid clr.$off-white;
     }
     a {
+      // border: 1px solid red;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3rem;
+      transition: ease 300ms;
+      border-radius: 8px;
+    }
+    a:hover {
+      background-color: clr.$light-green;
+      color: clr.$navy;
+    }
+    a,
+    button {
       position: relative;
       z-index: 99;
     }
     .nav__links::before {
       position: absolute;
-      // z-index: 3;
       content: "";
       height: 100%;
       width: 100%;
