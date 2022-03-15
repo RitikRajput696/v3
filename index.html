@@ -16,11 +16,12 @@
             <nav>
                 <div class="logo">Ritik_Rajput</div>
                 <div class="nav__links">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
+                    <a href="#home">Home</a>
+                    <a href="#about-me">About</a>
                     <a href="#">Projects</a>
                     <a href="#">Contact</a>
-                    <button>Resume</button>
+                    <a href="https://drive.google.com/file/d/1amk0Uz6-aOE_FGXigqS6bZbe01kqd_HU/view"
+                        target=_blank><button>Resume</button></a>
 
                 </div>
                 <div class="hamburger" id="ham">
@@ -31,14 +32,57 @@
             </nav>
         </header>
         <main>
-            <section class="hero">
+
+            <!-- Hero Section  -->
+            <section class="hero" id="home">
                 <p class="greeting">Hi, My name is </p>
                 <h1 class="name">Ritik Rajput</h1>
                 <h1 class="job">I am a frontend Web Developer</h1>
                 <p class="about-me">I’m a software engineer specializing in building (and occasionally designing)
                     exceptional digital experiences. Currently, I’m focused on building accessible, human-centered
-                    products at Upstatement.</p>
+                    products at <span class="text-green"> Upstatement.</span></p>
                 <button class="hire-me">Hire Me</button>
+
+            </section>
+
+            <!-- About Me  -->
+            <section class="about__me numbered__heading" id="about-me">
+                <div my-info>
+                    <span class="text-green">01.</span><span class="mid-heading">About Me</span>
+                    <p>Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in
+                        web
+                        development started back in 2012 when I decided to try editing custom Tumblr themes — turns out
+                        hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
+                    <p>
+                        Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a
+                        start-up, a
+                        huge corporation, and a student-led design studio. My main focus these days is building
+                        accessible,
+                        inclusive products and digital experiences at Upstatement for a variety of clients.
+                    </p>
+                    <p>
+                        I also recently launched a course that covers everything you need to build a web app with the
+                        Spotify API using Node & React.
+                    </p>
+                    <p>
+                        Here are a few technologies I’ve been working with recently:
+                    </p>
+                    <ul class="skills-list">
+                        <li>JavaScript (ES6+)</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Eleventy</li>
+                        <li>Node.js</li>
+                        <li>WordPress</li>
+                    </ul>
+                </div>
+                <div class="my-img">
+                    <img src="./assets/my-img/IMG_20210811_124811-removebg-preview (1).png" alt="">
+                </div>
+            </section>
+
+            <!-- My projects  -->
+            <section>
 
             </section>
 

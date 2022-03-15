@@ -1,7 +1,6 @@
 //
 @use "../utils/color" as clr;
 .hero {
-  padding: 3rem 5rem 0 5rem;
   .greeting {
     color: clr.$light-green;
     margin-bottom: 1rem;
