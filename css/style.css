@@ -138,6 +138,23 @@ p {
   margin-bottom: 1rem;
 }
 
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+.card-container .card {
+  background-color: #112240;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card-container .card-label {
+  align-self: end;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -336,6 +353,13 @@ section .mid-heading::after {
   font-weight: bold;
   display: inline-block;
   width: 1em;
+}
+
+.my__project {
+  padding-top: 10rem;
+}
+.my__project .mid-heading::after {
+  left: 10rem;
 }
 
 .hero .greeting {

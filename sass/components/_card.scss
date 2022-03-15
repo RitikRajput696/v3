@@ -1,0 +1,18 @@
+@use "../utils/color";
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  .card {
+    background-color: #112240;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .card-label {
+    align-self: end;
+  }
+}
