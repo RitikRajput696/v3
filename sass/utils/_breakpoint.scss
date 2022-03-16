@@ -1,13 +1,23 @@
 @use "../utils/color" as clr;
 
 @media (max-width: 1275px) {
+  .hero {
+    .name,
+    .job {
+      font-size: 3rem !important;
+    }
+  }
   .my__project {
     .card-container {
       grid-template-columns: 1fr 1fr;
     }
   }
 }
-
+//
+//
+//
+//
+//
 @media (max-width: 1000px) {
   nav {
     .nav__links {
@@ -75,15 +85,23 @@
       min-width: 300px;
     }
   }
-
-  // // my project section
-  // .my__project {
-  //   .card-container {
-  //     grid-template-columns: 1fr 1fr;
-  //   }
-  // }
 }
+//
+//
+//
+//
 
+@media (max-width: 925px) {
+  .my__project {
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+//
+//
+//
+//
 //mobile view
 @media (max-width: 768px) {
   .grid__container {
@@ -110,5 +128,13 @@
   }
   section {
     padding: 3rem 1rem 0 1rem !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact__me {
+    h1 {
+      font-size: 2rem !important;
+    }
   }
 }

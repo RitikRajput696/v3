@@ -23,6 +23,11 @@ body {
 }
 
 @media (max-width: 1275px) {
+  .hero .name,
+.hero .job {
+    font-size: 3rem !important;
+  }
+
   .my__project .card-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -87,6 +92,11 @@ nav button {
     min-width: 300px;
   }
 }
+@media (max-width: 925px) {
+  .my__project .card-container {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 768px) {
   .grid__container {
     grid-template-areas: "header header header" "main main main" "sidebar sidebar sidebar" "aside aside aside" "footer footer footer" !important;
@@ -110,6 +120,11 @@ nav button {
 
   section {
     padding: 3rem 1rem 0 1rem !important;
+  }
+}
+@media (max-width: 450px) {
+  .contact__me h1 {
+    font-size: 2rem !important;
   }
 }
 a {
@@ -173,6 +188,9 @@ p {
 }
 .card-container .card .card-para {
   color: #8892b0;
+}
+.card-container .card-label {
+  margin-top: auto;
 }
 
 header {
@@ -295,6 +313,7 @@ aside .email:after {
 }
 
 footer {
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -385,6 +404,27 @@ section .mid-heading::after {
   margin-top: 2rem;
 }
 
+.contact__me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+}
+.contact__me > div {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.contact__me h1 {
+  font-size: 4rem;
+}
+.contact__me h1,
+.contact__me p {
+  text-align: center;
+}
 .contact__me .mid-heading::after {
   left: 10.2rem;
 }
@@ -396,7 +436,6 @@ section .mid-heading::after {
 .hero .name,
 .hero .job {
   font-size: 5vw;
-  margin-bottom: 1rem;
 }
 .hero .name {
   color: #ccd6f6;
