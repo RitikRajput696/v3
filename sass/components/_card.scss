@@ -1,18 +1,33 @@
-@use "../utils/color";
+@use "../utils/color" as clr;
 
 .card-container {
+  width: 100%;
+  a {
+    background-color: #112240;
+    &:hover {
+      color: clr.$off-white;
+    }
+  }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
+  justify-content: center;
   gap: 1rem;
   .card {
-    background-color: #112240;
+    height: 100%;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-  }
-  .card-label {
-    align-self: end;
+    .card-heading {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .card-heading:hover {
+      color: clr.$light-green;
+    }
+    .card-para {
+      color: clr.$slate;
+    }
   }
 }
