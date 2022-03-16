@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   width: 100vw;
@@ -107,7 +111,16 @@ nav button {
   }
 
   .sidebar {
-    display: none !important;
+    margin-top: 5rem;
+    flex-direction: row;
+    width: 100% !important;
+    height: 5rem !important;
+    position: static !important;
+    z-index: 0;
+  }
+  .sidebar .social__icons {
+    flex-direction: row;
+    gap: 1rem;
   }
 
   aside {
@@ -238,6 +251,7 @@ nav .logo {
 .nav__links a {
   margin-right: 1rem;
   font-size: 1.1rem;
+  transition: all 0.5s ease;
 }
 
 .hamburger {
@@ -337,7 +351,7 @@ aside .email:after {
 }
 
 footer {
-  padding-top: 10rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

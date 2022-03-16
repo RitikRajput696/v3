@@ -116,7 +116,16 @@
     width: 100vw;
   }
   .sidebar {
-    display: none !important;
+    margin-top: 5rem;
+    flex-direction: row;
+    width: 100% !important;
+    height: 5rem !important;
+    position: static !important;
+    z-index: 0;
+    .social__icons {
+      flex-direction: row;
+      gap: 1rem;
+    }
   }
   aside {
     display: none !important;
