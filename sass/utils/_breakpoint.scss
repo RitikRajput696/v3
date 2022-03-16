@@ -132,6 +132,11 @@
 }
 
 @media (max-width: 450px) {
+  section {
+    .mid-heading::after {
+      width: 150px !important;
+    }
+  }
   .contact__me {
     h1 {
       font-size: 2rem !important;

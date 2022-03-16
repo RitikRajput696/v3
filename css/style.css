@@ -123,6 +123,10 @@ nav button {
   }
 }
 @media (max-width: 450px) {
+  section .mid-heading::after {
+    width: 150px !important;
+  }
+
   .contact__me h1 {
     font-size: 2rem !important;
   }
@@ -148,6 +152,7 @@ button {
 }
 
 button:hover {
+  cursor: pointer;
   background-color: #64ffda;
   color: #0a192f;
   box-shadow: 0 0 10px #64ffda;
@@ -188,6 +193,20 @@ p {
 }
 .card-container .card .card-para {
   color: #8892b0;
+}
+.card-container .card-icon {
+  display: flex;
+  justify-content: space-between;
+}
+.card-container .file-icon img {
+  width: 2.5rem;
+}
+.card-container .share-icon svg {
+  width: 1.5rem;
+  fill: #e6f1ff;
+}
+.card-container .share-icon svg:hover {
+  fill: #64ffda;
 }
 .card-container .card-label {
   margin-top: auto;
@@ -278,6 +297,11 @@ footer {
 
 .sidebar img {
   width: 30px;
+  transition: transform ease 200ms;
+}
+
+.sidebar img:hover {
+  transform: translateY(-30%);
 }
 
 .social__icons {
@@ -426,7 +450,7 @@ section .mid-heading::after {
   text-align: center;
 }
 .contact__me .mid-heading::after {
-  left: 10.2rem;
+  display: none;
 }
 
 .hero .greeting {

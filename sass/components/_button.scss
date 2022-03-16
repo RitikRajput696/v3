@@ -11,6 +11,7 @@ button {
   transition: ease 200ms;
 }
 button:hover {
+  cursor: pointer;
   background-color: clr.$light-green;
   color: clr.$navy;
   box-shadow: 0 0 10px clr.$light-green;

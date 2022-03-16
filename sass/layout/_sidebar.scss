@@ -9,6 +9,10 @@
 }
 .sidebar img {
   width: 30px;
+  transition: transform ease 200ms;
+}
+.sidebar img:hover {
+  transform: translateY(-30%);
 }
 .social__icons {
   position: relative;

@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 10rem;
+
   & > div {
     max-width: 600px;
     display: flex;
@@ -18,8 +19,7 @@
   p {
     text-align: center;
   }
-
   .mid-heading::after {
-    left: 10.2rem;
+    display: none;
   }
 }
