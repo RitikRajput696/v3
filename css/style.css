@@ -273,8 +273,8 @@ nav .logo {
 }
 
 .grid__container {
+  max-width: 1440px;
   position: relative;
-  width: 100%;
   min-height: 100vh;
   display: grid;
   grid-template-areas: "header header header" "sidebar main aside" "sidebar footer aside";
@@ -410,6 +410,15 @@ section .mid-heading::after {
   height: 25vw;
   width: 25vw;
   border-radius: 10px;
+}
+.about__me .my-details {
+  margin: 2rem 0;
+  display: flex;
+  padding: 1rem;
+  border-left: 2px solid #64ffda;
+}
+.about__me .about-me-value {
+  padding-left: 2rem;
 }
 .about__me ul {
   list-style-type: none;

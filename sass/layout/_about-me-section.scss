@@ -18,7 +18,16 @@
     width: 25vw;
     border-radius: 10px;
   }
+  .my-details {
+    margin: 2rem 0;
+    display: flex;
+    padding: 1rem;
+    border-left: 2px solid clr.$light-green;
+  }
 
+  .about-me-value {
+    padding-left: 2rem;
+  }
   ul {
     list-style-type: none;
     color: clr.$slate;
