@@ -82,7 +82,10 @@
     flex-direction: column;
     .my-img {
       align-self: center;
-      min-width: 300px;
+      img {
+        width: 15rem !important;
+        height: 15rem !important;
+      }
     }
   }
 }

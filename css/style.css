@@ -93,7 +93,10 @@ nav button {
   }
   .about__me .my-img {
     align-self: center;
-    min-width: 300px;
+  }
+  .about__me .my-img img {
+    width: 15rem !important;
+    height: 15rem !important;
   }
 }
 @media (max-width: 925px) {
@@ -406,18 +409,6 @@ section .mid-heading::after {
   margin: 3.5rem 0 0 1rem;
   height: 25vw;
   width: 25vw;
-  border-radius: 10px;
-}
-.about__me .my-img::after {
-  position: absolute;
-  content: "";
-  width: 25vw;
-  height: 25vw;
-  background-color: #005c80;
-  z-index: 28;
-  left: 0;
-  opacity: 0.7;
-  margin: 3.5rem 0 0 1rem;
   border-radius: 10px;
 }
 .about__me ul {
