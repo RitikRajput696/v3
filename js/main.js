@@ -1,6 +1,8 @@
 const hamBurger = document.querySelector(".hamburger");
 const showNav = document.querySelector(".nav__links");
-console.log("help me");
+console.log(
+  "help me someone, i donot know why but this website freezes while scrolling, if you have the solution pls connect with me on social media"
+);
 
 // hamburger show/hide
 hamBurger.addEventListener("click", () => {
@@ -8,11 +10,11 @@ hamBurger.addEventListener("click", () => {
   showNav.classList.toggle("nav-active");
 });
 
-const navClickAnimation = document.querySelectorAll(".nav__links a");
+// const navClickAnimation = document.querySelectorAll(".nav__links a");
 
-navClickAnimation.addEventListener("click", () => {
-  console.log("hasthmaithoon");
-});
+// navClickAnimation.addEventListener("click", () => {
+//   console.log("hasthmaithoon");
+// });
 
 // var form = document.getElementById("form");
 
